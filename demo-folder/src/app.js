@@ -5,6 +5,7 @@ import { showReceipt } from "./display.js";
 const itemPrice = 250;
 const itemQuantity = 2;
 
+
 const orderTotal = calculateTotal(itemPrice, itemQuantity);
 
 console.log("Tax rate:", TAX_RATE);
