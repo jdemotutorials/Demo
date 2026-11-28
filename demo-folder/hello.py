@@ -1,31 +1,34 @@
+# Sample Python file for testing references
 
-# Simple Student Grade Calculator
-
-def calculate_average(grades):
-    total = sum(grades)
-    average = total / len(grades)
-    return average
+def calculate_total(price, quantity):
+    total = price * quantity
+    return total
 
 
-def get_grade_status(average):
-    if average >= 90:
-        return "Excellent"
-    elif average >= 75:
-        return "Passed"
-    else:
-        return "Failed"
+def display_receipt(total):
+    print("Receipt")
+    print("Total:", total)
 
 
-# Student information
-student_name = "John"
-student_grades = [85, 92, 78, 88, 95]
+# First order
+item_price = 100
+item_quantity = 2
 
-# Calculate results
-average = calculate_average(student_grades)
-status = get_grade_status(average)
+order_total = calculate_total(item_price, item_quantity)
+display_receipt(order_total)
 
-# Display results
-print("Student:", student_name)
-print("Grades:", student_grades)
-print("Average:", round(average, 2))
-print("Status:", status)
+
+# Second order
+item_price = 250
+item_quantity = 3
+
+order_total = calculate_total(item_price, item_quantity)
+display_receipt(order_total)
+
+
+# Third order
+item_price = 150
+item_quantity = 4
+
+order_total = calculate_total(item_price, item_quantity)
+display_receipt(order_total)
