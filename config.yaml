@@ -1,0 +1,5 @@
+name: Sample Project
+version: 1.0
+settings:
+  theme: dark
+  notifications: true
